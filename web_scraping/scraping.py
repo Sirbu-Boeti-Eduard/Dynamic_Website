@@ -33,7 +33,6 @@ for item in items:
 	position=aux.rfind('-')
 	aux=aux[0:position-1]
 	nyaa_temp['pubDate']=datetime.strptime(aux, "%a, %d %b %Y %H:%M:%S").strftime("%Y-%m-%d %H:%M:%S")
-	
 	nyaa_temp['trusted'] = item.trusted.text
 	nyaa.append(nyaa_temp)
 
